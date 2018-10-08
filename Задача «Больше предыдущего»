@@ -1,0 +1,33 @@
+s = [int(i) for i in input().split()]
+for i in range(1, (len(s))):
+    if s[i] > s[i-1]:
+        print(s[i])
+        
+        
+prev = 99999999999999
+sp = [int(i) for i in input().split()]
+for num in sp:
+    if num > prev:
+        print(num, end=' ')
+    prev = num
+    
+    
+a = input().split()
+for i in range(len(a)):
+    a[i] = int(a[i])
+for i in range(1,len(a)):
+    if a[i]>a[i-1]:
+        print(a[i],end=" ")
+        
+        
+a = input().split() # строка
+for i in range(len(a)-1): # строка
+    n = int(a[i]) # строка в списке стала числом - строка "5" стала числом 5 для 5 4 3 2 1 
+    i += 1
+    m = int(a[i]) # строка в списке стала числом - строка "4" стала числом 4 для 5 4 3 2 1 
+    if m > n:
+        n = m
+        print(m, end=' ')
+        
+        
+        
