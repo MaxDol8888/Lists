@@ -1,0 +1,12 @@
+s = input().split()
+for i in range(0, len(s), 2):
+    print(s[i])
+    
+    
+a = input().split(' ')
+for i in range(len(a)):
+    if i % 2 == 0:
+        print(a[i])
+        
+        
+       
