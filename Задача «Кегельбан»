@@ -1,0 +1,62 @@
+n, k = [int(s) for s in input().split()]
+bahn = ['I'] * n
+for i in range(k):
+    left, right = [int(s) for s in input().split()]
+    for j in range(left - 1, right):
+        bahn[j] = '.'
+print(''.join(bahn))
+
+
+N, K = [int(elem) for elem in input().split()]
+
+lst = ['I'] * N
+
+for i in range(0, K):
+    i, r = [int(elem) - 1 for elem in input().split()]
+    lst[i:(r + 1)] = ['.']*(r - i + 1)
+
+print(''.join(lst))
+
+
+inptu = [int(i) for i in input().split()]
+kegeli = inptu[0]
+shariki = inptu[1]
+row = ['I']*kegeli
+for i in range(shariki):
+    l, r = [int(i) for i in input().split()]
+    for j in range(l-1, r):
+        row[j] = '.'
+print(''.join([str(i) for i in row]))
+
+
+a = [int(i) for i in input().split()]
+b = ['I'] * a[0]
+for i in range(a[1]):
+    c = [int(i) for i in input().split()]
+    for j in range(c[0], c[1] + 1):
+        b[j - 1] = '.'
+print(''.join(b))
+
+
+N, k = [int(i) for i in input().split()]
+kegles = ['I' for i in range(N)]
+l_i = 0; r_i = 0
+
+for i in range(k):
+    l_i, r_i = [int(s) for s in input().split()]
+    for j in range(l_i - 1, r_i):
+        kegles[j] = '.'
+    l_i = 0; r_i = 0
+
+for i in range(len(kegles)):
+    print(kegles[i], end = '')
+
+
+k, n = [int(x) for x in input().split()]
+A = ['I'] * k 
+for i in range(n):
+    p, t = [int(x) for x in input().split()]
+    for j in range(p - 1, t):
+        A[j] = '.'
+
+print(''.join([str(i) for i in A]))
