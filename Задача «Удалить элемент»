@@ -1,0 +1,38 @@
+a=[int(i) for i in input().split()]
+k=int(input())
+for i in range(0,len(a)):
+    if k+1<=i:
+        a[i],a[i-1]=a[i-1],a[i]
+a.pop()
+print(*a)
+
+
+a = [int(s) for s in input().split()]
+k = int(input())
+for i in range(k + 1, len(a)):
+    a[i - 1] = a[i]
+a.pop()
+print(' '.join([str(i) for i in a]))
+
+
+a = input().split()
+k = int(input())
+for i in range(k, len(a) - 1):
+    a[i], a[i+1] = a[i+1], a[i]
+a.pop()
+print(' '.join(a))
+
+
+a = [int(s) for s in input().split()]
+k = int(input())
+for i in range(k + 1, len(a)):
+    a[i - 1] = a[i]
+a.pop()
+print(' '.join([str(i) for i in a]))
+
+
+list = [str(item) for item in input().split()]
+x = int(input())
+list = list[:x] + list[x + 1:]
+
+print(" ".join(list))
