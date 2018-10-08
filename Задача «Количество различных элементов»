@@ -1,0 +1,16 @@
+a = [int(i) for i in input().split()]
+z = 1
+for i in range(0, len(a) - 1):
+    if a[i] != a[i + 1]:
+        z += 1
+print(z)
+
+
+a = input().split()
+sum_index = 0
+for i in range(0, len(a) - 1):
+    if int(a[i]) != int(a[i + 1]):
+        sum_index += 1
+print(sum_index + 1)
+
+
