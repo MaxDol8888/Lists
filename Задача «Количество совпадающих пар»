@@ -1,0 +1,25 @@
+a=[int(i) for i in input().split()]
+kolvo= 0
+for i in range(len(a)):
+    for j in range(i+1,len(a)):
+        if a[i] == a[j]:
+            kolvo += 1
+print(kolvo)
+
+
+a=[int(i) for i in input().split(' ')]
+k=0
+for i in range(len(a)):
+    for j in range(len(a)):
+        if i!=j and a[i]==a[j]:
+            k+=1
+print(k//2)
+
+
+a = [int(i) for i in input().split()]
+cnt = 0
+for i in range(0, len(a) - 1):
+    for k in range (i + 1, len (a)):
+        if a[i] == a[k]:
+            cnt += 1
+print (cnt)
