@@ -1,0 +1,14 @@
+#Soroka
+import random
+a=[random.randint(0,10) for i in range(7)]
+print(*a)
+b=[]
+sch=0
+for i in a:
+    if (i in b):
+        continue
+    else:
+        sch+=1
+        b.append(i)
+print(sch)
+
