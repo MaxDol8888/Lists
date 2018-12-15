@@ -1,0 +1,40 @@
+#Lysenko
+a = [X for X in input().split(' ')]
+d=[]
+for i in range(len(a)-1):
+    if int(a[i])>0:
+        d.append(a[i])
+print(min(d[:]))
+
+
+#Soroka
+import random
+a=[random.randint(-1000,1000) for i in range(15)]
+print(*a)
+b=[]
+for i in a:
+    if(i>0):
+        b.append(i)
+    else:
+        i=i
+print(min(b))
+
+
+#Fomenko
+a=1000
+for i in  input().split():
+    if(int(i) < a and int(i) > 0):
+        a=int(i)
+print(a)
+
+
+#Sholin
+from random import randrange
+a = [randrange(-10,11) for i in range(randrange(6,11))]
+b = []
+for x in range(len(a)):
+    if (a[x] > 0):
+        b.append(a[x])
+print(*a)
+print(*b)
+print(min(b))
