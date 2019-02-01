@@ -5,7 +5,7 @@ print(*arr)
 def swap(arr, i, j):
     arr[i], arr[j] = arr[j], arr[i]
   
-def select_sort(arr):
+def InsertionSort(arr):
     i = len(arr)
     while i > 1:
         max = 0
@@ -14,6 +14,6 @@ def select_sort(arr):
                 max = j
         swap(arr, i - 1, max)
         i -= 1
-select_sort(arr)
+InsertionSort(arr)
 print(*arr)
 
