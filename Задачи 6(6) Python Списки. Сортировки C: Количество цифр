@@ -1,0 +1,19 @@
+#Mikaelan
+from random import*
+a = [randrange(1, 9) for i in range(randrange(5, 10))]
+a.append(0)
+print(*a)
+def numCount(a):
+    b = a.count(1)
+    c = a.count(2)           #Количество цифр
+    d = a.count(3)
+    e = a.count(4)
+    f = a.count(5)
+    g = a.count(6)
+    h = a.count(7)
+    i = a.count(8)
+    j = a.count(9)
+    print('1 -', b, '2 -', c, '3 -', d, '4 -', e, '5 -', f, '6 -', g, '7 -', h, '8 -', i, '9 -', j)
+numCount(a)
+
+
