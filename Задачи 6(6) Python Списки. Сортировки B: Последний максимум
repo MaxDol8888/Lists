@@ -1,0 +1,10 @@
+#Mikaelan
+def lastMax(a):
+    m = max(a)
+    index_of_max = 0
+    for i in range(len(a)):
+        if a[index_of_max] <= a[i]:     # Последний максимум
+            index_of_max = i
+    return m, index_of_max
+print(lastMax([1, 4, 3, 5, 6, 5, 8, 7, 9, 0, 4, 9, 5, 7, 9]))
+
