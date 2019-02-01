@@ -1,0 +1,16 @@
+#Zolotonosha - ? + Max
+a=[1,0,9,5,3,8,4,6,2,11,3]
+print (a)
+def BubbleSort(a):
+    n=len(a)
+    m=n-1
+    while m>0:
+        for i in range(m):
+          if (a[i]>a[i+1]):
+           x=a[i]
+           a[i]=a[i+1]
+           a[i+1]=x
+        m=m-1
+BubbleSort(a)
+print(a)
+
