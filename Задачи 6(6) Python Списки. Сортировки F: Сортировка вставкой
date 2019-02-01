@@ -1,0 +1,19 @@
+#Zolotonosha ?
+arr=[1,0,9,5,3,8,4,6,2]
+print(*arr)
+
+def swap(arr, i, j):
+    arr[i], arr[j] = arr[j], arr[i]
+  
+def select_sort(arr):
+    i = len(arr)
+    while i > 1:
+        max = 0
+        for j in range(i):
+            if arr[j] > arr[max]:
+                max = j
+        swap(arr, i - 1, max)
+        i -= 1
+select_sort(arr)
+print(*arr)
+
