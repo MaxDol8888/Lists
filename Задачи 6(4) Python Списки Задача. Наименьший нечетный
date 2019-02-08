@@ -49,3 +49,9 @@ for i in  input().split():
     if(int(i) % 2 == 1 and int(i) < a and int(i) > 0):
         a=int(i)
 print(a)
+
+
+#Mikaelan
+a = [int(j) for j in input().split()]
+print(min([a[i] for i in range(len(a)) if a[i] % 2 == 1]))   # Наименьший нечетный
+
