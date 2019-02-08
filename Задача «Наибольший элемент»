@@ -49,3 +49,7 @@ for i in range(len(a)):
         max=a[i]
         d=i
 print(a[d],d)
+
+
+#Mikaelan
+print(max([i for i in input().split()]))    #Наибольший элемент
