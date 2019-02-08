@@ -56,3 +56,8 @@ a = [int(j) for j in input().split()]
 print(min([a[i] for i in range(len(a)) if a[i] % 2 == 1]))   # Наименьший нечетный
 
 print(min([int(i) for i in input().split() if int(i) % 2 == 1]))   #Наименьший нечетный
+
+
+#Gusarova
+a = [int(i) for i in input().split()if int(i)%2!=0]  #наименшый не четный
+print(min(a) if a else 0)
