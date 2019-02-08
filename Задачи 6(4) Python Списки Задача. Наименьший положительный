@@ -38,3 +38,7 @@ for x in range(len(a)):
 print(*a)
 print(*b)
 print(min(b))
+
+
+#Mikaelan
+print(min([int(i) for i in input().split() if int(i) >= 0]))   #Наименьший положительный
