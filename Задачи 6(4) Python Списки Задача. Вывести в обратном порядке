@@ -25,3 +25,11 @@ a = [randrange(1,23) for i in range(randrange(7,23))]
 print(*a)
 a.reverse()
 print(*a)
+
+
+#Gusarova
+a = [int(i) for i in input().split()]   #развернуть список
+for i in reversed(a):
+    print(end='.', i)
+    
+    
