@@ -1,0 +1,12 @@
+#Kondrachuk
+a=[int(s) for s in input().split()]
+b=0
+c=0
+for i in range(len(a)):
+    for i1 in range(i,len(a)):
+        if a[i]+a[i1]==0:
+            b=i
+            c=i1
+            print(b,c)
+            
+            
