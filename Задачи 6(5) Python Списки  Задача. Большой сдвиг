@@ -1,0 +1,12 @@
+#Kondrachuk
+a=[int(s) for s in input().split()]
+k=int(input())
+i1=0
+for i in range(len(a)):
+    a[i],a[len(a)-k+i1]=a[len(a)-k+i1],a[i]
+    if len(a)-k+i1+1<len(a):
+        i1+=1
+    else:
+        i1=0
+print(*a)
+
