@@ -10,3 +10,26 @@ A = [1, 2, 6, 7, 9, 3]
 print (IsAscending(A))
 
 
+#Kondrachuk
+a=[int(s) for s in input().split()]
+b=True
+for i in range(len(a)-1):
+    if a[i]>a[i+1]:
+        b=False
+        break
+print(b)
+
+
+#Kamenev
+def IsAscending(A):
+    i = 0
+    count = 0
+    while i < len(A)-1:
+        if int(A[i]) > int(A[i+1]):
+            return 'NO'
+        i += 1
+    return 'YES'
+A = input().split()
+    
+print (IsAscending(A)
+
