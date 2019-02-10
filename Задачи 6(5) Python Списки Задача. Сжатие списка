@@ -23,3 +23,24 @@ for i in range(len(a)):   #сжатие списка
        a.remove(a[i])
 print(a)
 
+
+#Kondrachuk
+a=[int(s) for s in input().split()]
+b=''
+for i in range(len(a)):
+    if a[i]==0:
+        for i1 in range(i,len(a)):
+            if a[i1]>0:
+                b=i1
+                break
+        a[i],a[b]=a[b],a[i]
+print(*a)
+
+
+#Kamenev
+lst = input().split()
+for i in reversed(range(len(lst))):
+    if lst[i] == '0':
+        lst.append(lst.pop(i))
+print(*lst)
+
