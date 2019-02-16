@@ -17,3 +17,12 @@ b = [a[i] for i in range(len(a)) if i % 2 == 0]  # Четные индексы
 print(*b)
 
 
+#Fateeva
+def chetnii_ind():
+    n=int(input('введите кол-во элементов '))
+    a=[]
+    for i in range(n):
+        t=input()
+        a.append(t)
+    print(a[::2])#чет инд
+chetnii_ind()
