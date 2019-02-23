@@ -15,6 +15,20 @@ while pos < len(a) and a[pos] >= x:
 print(pos + 1)
 
 
+#Fateeva
+nn=0
+a=[int(i) for i in input().split()]
+n=int(input())
+a.append(n)
+a.sort()
+print(a)
+for i in range(0,len(a)): 
+    if a[i]==n: 
+        nn=i+1
+ 
+print(nn)  
+
+
 s = input()  
 a = s.split() 
 p=int(input())
