@@ -1,0 +1,33 @@
+#Mikaelan
+from random import randint
+
+def select_sort(array):
+    alist = []
+    for i in range(len(array)):
+        alist.append(array.pop(array.index(min(array))))
+    return alist
+
+def insertion_sort(array):
+    for i in range(1, len(array)):
+        value = array[i]
+        pos = i
+        while pos > 0 and array[pos - 1] > value: array[pos] = array[pos - 1]; pos -= 1
+        array[pos] = value
+    return array
+
+def bubble_sort(array):
+    for i in range(1, len(array)):
+        for j in range(1, len(array)):
+            if array[j] < array[j - 1]:
+                array[j], array[j - 1] = array[j - 1], array[j]
+    return array
+            
+array = [randint(1, 30) for i in range(randint(10, 15))]
+
+print(*array)
+print()
+print(*select_sort(array.copy()))
+print()
+print(*insertion_sort(array.copy()))
+print()
+print(*bubble_sort(array.copy()))
